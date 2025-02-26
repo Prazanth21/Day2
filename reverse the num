@@ -1,0 +1,28 @@
+using System;
+using System.Diagnostics.Metrics;
+
+class Program 
+{
+    public static void Main() 
+    {
+        Console.WriteLine("enter the Number: ");
+
+        int number = Convert.ToInt32(Console.ReadLine());
+
+        int ReversedNumber = 0;
+        int reminder;
+
+        while (number != 0) 
+        {
+            reminder = number % 10;
+            ReversedNumber = ReversedNumber * 10 + reminder;
+            number /= 10;
+        }
+        Console.WriteLine("Reversed number is :"+ReversedNumber);
+    }
+}
+
+
+//Enter the Number:12034
+
+//Reversed number is :43021
