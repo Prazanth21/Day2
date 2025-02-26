@@ -1,0 +1,30 @@
+using System;
+using System.Diagnostics.Metrics;
+
+class Program 
+{
+    public static void Main(string[] args) 
+    {
+        int number;
+        do
+        {
+            Console.WriteLine("Enter a number between 1 and 10 : ");
+            number = Convert.ToInt32(Console.ReadLine());
+
+            if (number < 1 || number > 10)
+            {
+                Console.WriteLine("invalid number entered");
+            }
+        } while (number < 1 || number > 10) ;
+            Console.WriteLine("Entered a valid number");
+    }
+}
+
+// Enter a number between 1 and 10 :44
+
+// invalid number entered
+
+
+//Enter a number between 1 and 10 : 5
+
+//Entered a valid number
