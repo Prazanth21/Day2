@@ -1,0 +1,38 @@
+using System;
+using System.Diagnostics.Metrics;
+
+class Program 
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Enter a num : ");
+        int Num1 = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Enter a num : ");
+        int Num2 = Convert.ToInt32(Console.ReadLine());
+
+        int sum = Num1 + Num2;
+
+        if (sum < 300)
+        {
+            Console.WriteLine("the sum of two numbers is : "+sum);
+        }
+        else 
+        {
+            Console.WriteLine("Sum of entered two numbers is greater then 300.");
+        }
+    }
+
+}
+
+// OutPut:
+//  Enter a num : 150
+//  Enter a num :160
+//  Sum of entered two numbers is greater then 300.
+
+
+//  Enter a num :10
+
+//  Enter a num :270
+
+//  the sum of two numbers is : 280
