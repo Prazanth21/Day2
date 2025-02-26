@@ -1,0 +1,31 @@
+using System;
+
+class Program 
+{
+    static void Main() 
+    {
+        Console.WriteLine("Enter a string: ");
+
+        string text = Console.ReadLine();
+
+        int len = text.Length;
+
+        if (len % 2 == 0)
+        {
+            Console.WriteLine("Entered string is Even.. ");
+        }
+        else 
+        {
+            Console.WriteLine("Entered string is odd ..");
+        }
+    }
+}
+
+//Output;
+// Enter a string: prasanth
+ 
+//Entered string is Even..
+
+// Enter a string : mouse
+
+// entered string is odd..
