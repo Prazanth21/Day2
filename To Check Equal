@@ -33,3 +33,12 @@ class Program
         obj.CkeckIfEqual();
     }
 }
+
+// Output:
+// Enter a Number:10
+// Enter a Number:20
+// Both are not equal
+
+// Enter a Number:20
+// Enter a Number:20
+// The entered two numbers are equal
