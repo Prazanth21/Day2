@@ -1,1 +1,30 @@
+using System;
 
+class Program 
+{
+    public static void Main() 
+    {
+        int[] number = { 63, 82, 56, 22, 64 };
+
+        if (number.Length == 0 || number == null) 
+        {
+            Console.WriteLine("no elements inn the array ");
+            return;
+
+        }
+
+        int smallest = number[0];
+
+        for (int i = 1; i < number.Length; i++) 
+        {
+            if (number[i] < smallest) 
+            {
+                smallest = number[i];
+            }
+        }
+        Console.WriteLine("the smallest number is : " + smallest);
+    }
+}
+
+
+// the smallest number is : 22
